@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "eslint-plugin-crescware-no-to-be",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,9 +9,10 @@
     "check:lint": "oxlint && oxfmt --check",
     "check:types": "tsgo -p tsconfig.json --noEmit",
     "format": "oxlint --fix && oxfmt",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "devDependencies": {
+    "@types/node": "24.12.2",
     "@typescript/native-preview": "7.0.0-dev.20260422.1",
     "knip": "6.7.0",
     "oxfmt": "0.47.0",
